@@ -15,7 +15,7 @@ using namespace std;
 int main() {
 	// Setup
 	double costOfDances, costOfMighty, costOfSnoring;
-	int rentingDances, rentingMighty, rentingSnoring;
+	double rentingDances, rentingMighty, rentingSnoring;
 	const char separator = ' ';
 	const int nameWidth = 8;
 	const int costWidth = 13;
@@ -24,16 +24,52 @@ int main() {
 	// Take in values from the user
 	cout << "How much is Dances?\t";
 	cin >> costOfDances;
+	if (abs(costOfDances) != costOfDances) {
+		while (abs(costOfDances) != costOfDances) {
+			cout << "That's a negative number. How much is Dances?\t";
+			cin >> costOfDances;
+		}
+	}
 	cout << "How many people are renting Dances? \t";
 	cin >> rentingDances;
+	if (floor(rentingDances) != rentingDances) {
+		while (floor(rentingDances) != rentingDances) {
+			cout << "Invalid value entered. How many people are renting Dances? \t";
+			cin >> rentingDances;
+		}
+	}
 	cout << "How much is Mighty?\t";
 	cin >> costOfMighty;
+	if (abs(costOfMighty) != costOfMighty) {
+		while (abs(costOfMighty) != costOfMighty) {
+			cout << "That's a negative number. How much is Mighty?\t";
+			cin >> costOfMighty;
+		}
+	}
 	cout << "How many people are renting Mighty? \t";
 	cin >> rentingMighty;
+	if (floor(rentingMighty) != rentingMighty) {
+		while (floor(rentingMighty) != rentingMighty) {
+			cout << "Invalid value entered. How many people are renting Mighty? \t";
+			cin >> rentingMighty;
+		}
+	}
 	cout << "How much is Snoring?\t";
 	cin >> costOfSnoring;
+	if (abs(costOfSnoring) != costOfSnoring) {
+		while (abs(costOfSnoring) != costOfSnoring) {
+			cout << "That's a negative number. How much is Snoring?\t";
+			cin >> costOfSnoring;
+		}
+	}
 	cout << "How many people are renting Snoring? \t";
 	cin >> rentingSnoring;
+	if (floor(rentingSnoring) != rentingSnoring) {
+		while (floor(rentingSnoring) != rentingSnoring) {
+			cout << "Invalid value entered. How many people are renting Snoring? \t";
+			cin >> rentingSnoring;
+		}
+	}
 
 	cout << "\n" << endl; // Spacing
 
@@ -55,6 +91,6 @@ int main() {
 	double averageValue = totalValue / ((long) rentingDances + (long) rentingMighty + (long) rentingSnoring); // they are (long) to prevent overflow [VS yelled at me]
 
 	// Printing out our newly calculated values
-	printf("The total value of all tapes is: $%.2f\n", totalValue);
+	printf("The total value of all rentals is: $%.2f\n", totalValue);
 	printf("The average value is: $%.2f\n", averageValue);
 }

@@ -1,2 +1,5 @@
 ﻿  DataBasics22.cpp
+C:\Users\rvalm\source\repos\DataBasics22\DataBasics22\DataBasics22.cpp(84,9): warning C4477: 'printf' : format string '%-15i' requires an argument of type 'int', but variadic argument 3 has type 'double'
+C:\Users\rvalm\source\repos\DataBasics22\DataBasics22\DataBasics22.cpp(85,9): warning C4477: 'printf' : format string '%-15i' requires an argument of type 'int', but variadic argument 3 has type 'double'
+C:\Users\rvalm\source\repos\DataBasics22\DataBasics22\DataBasics22.cpp(86,9): warning C4477: 'printf' : format string '%-15i' requires an argument of type 'int', but variadic argument 3 has type 'double'
   DataBasics22.vcxproj -> C:\Users\rvalm\source\repos\DataBasics22\Debug\DataBasics22.exe
