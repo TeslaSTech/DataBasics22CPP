@@ -32,8 +32,8 @@ int main() {
 	}
 	cout << "How many people are renting Dances? \t";
 	cin >> rentingDances;
-	if (floor(rentingDances) != rentingDances) {
-		while (floor(rentingDances) != rentingDances) {
+	if (floor(rentingDances) != rentingDances || rentingDances < 0) {
+		while (floor(rentingDances) != rentingDances || rentingDances < 0) {
 			cout << "Invalid value entered. How many people are renting Dances? \t";
 			cin >> rentingDances;
 		}
@@ -48,8 +48,8 @@ int main() {
 	}
 	cout << "How many people are renting Mighty? \t";
 	cin >> rentingMighty;
-	if (floor(rentingMighty) != rentingMighty) {
-		while (floor(rentingMighty) != rentingMighty) {
+	if (floor(rentingMighty) != rentingMighty || rentingMighty < 0) {
+		while (floor(rentingMighty) != rentingMighty || rentingMighty < 0) {
 			cout << "Invalid value entered. How many people are renting Mighty? \t";
 			cin >> rentingMighty;
 		}
@@ -64,8 +64,8 @@ int main() {
 	}
 	cout << "How many people are renting Snoring? \t";
 	cin >> rentingSnoring;
-	if (floor(rentingSnoring) != rentingSnoring) {
-		while (floor(rentingSnoring) != rentingSnoring) {
+	if (floor(rentingSnoring) != rentingSnoring || rentingSnoring < 0) {
+		while (floor(rentingSnoring) != rentingSnoring || rentingSnoring < 0) {
 			cout << "Invalid value entered. How many people are renting Snoring? \t";
 			cin >> rentingSnoring;
 		}
